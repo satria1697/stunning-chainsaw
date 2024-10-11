@@ -7,8 +7,11 @@ on:
       - completed
 jobs:
   step-one:
-    name: 'step one'
+    name: step-one
     runs-on: ubuntu-latest
     steps:
-      - name: echo
-        run: echo "ehe"
+      - uses: actions/checkout@v4
+        with:
+          ref: 1.0.0
+      - name: run step one
+        run: node index.js

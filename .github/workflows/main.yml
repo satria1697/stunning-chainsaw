@@ -1,0 +1,11 @@
+name: Test run
+
+on:
+  workflow_dispatch:
+
+jobs:
+  step-one:
+    name: 'step one'
+    steps:
+      - name: echo
+        run: echo "ehe"

@@ -1,7 +1,6 @@
-name: Test run
+name: should run tag
 
 on:
-  workflow_run:
   workflow_dispatch:
 
 jobs:
@@ -10,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo "ehe"
+        run: echo "mwehe"

@@ -2,8 +2,9 @@ name: Test run
 
 on:
   workflow_run:
-  workflow_dispatch:
-
+    workflows: [should run tag]
+    types:
+      - completed
 jobs:
   step-one:
     name: 'step one'
